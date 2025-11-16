@@ -87,7 +87,8 @@ class GIFProcessor:
                 duration=durations,
                 loop=loop,
                 optimize=optimize,
-                transparency=0  # Set transparency index
+                transparency=0, # Set transparency index
+                disposal=2
             )
             
             self.logger.info(f"✅ Created GIF with {len(frames)} frames: {output_path}")
